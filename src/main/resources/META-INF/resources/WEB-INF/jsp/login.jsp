@@ -10,5 +10,6 @@
 <body>
     <h1>Login Page</h1>
     <p>This will be the login page</p>
+    <p>Hello, my name is ${name}</p>
 </body>
 </html>
