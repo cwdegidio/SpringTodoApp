@@ -1,20 +1,18 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome Page</title>
-</head>
-<body>
-    <div>
-        <h1>Welcome to com.cwdegido</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome Page</title>
+    </head>
+    <body>
         <div>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Password:</strong> ${password}</p>
+            <h1>Welcome to com.cwdegido</h1>
+            <div>
+                <p><strong>Username:</strong> ${name}</p>
+            </div>
         </div>
-
-    </div>
-</body>
+    </body>
 </html>
