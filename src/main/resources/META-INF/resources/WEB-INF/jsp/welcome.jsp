@@ -5,14 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Page</title>
+    <title>Welcome Page</title>
 </head>
 <body>
-    <h1>Login Page</h1>
-    <form method="POST">
-        Name: <input type="text" name="name" />
-        Password: <input type="password" name="password" />
-        <input type="Submit" />
-    </form>
+    <div>
+        <h1>Welcome to com.cwdegido</h1>
+        <div>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Password:</strong> ${password}</p>
+        </div>
+
+    </div>
 </body>
 </html>
