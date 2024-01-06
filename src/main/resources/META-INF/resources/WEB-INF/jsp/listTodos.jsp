@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>List Todos</h1>
+    <h2>Welcome ${name}</h2>
     <div>
         Your todos are: ${todos}
     </div>
