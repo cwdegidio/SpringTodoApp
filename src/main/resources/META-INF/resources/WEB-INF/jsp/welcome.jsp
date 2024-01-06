@@ -9,10 +9,8 @@
     </head>
     <body>
         <div>
-            <h1>Welcome to com.cwdegido</h1>
-            <div>
-                <p><strong>Username:</strong> ${name}</p>
-            </div>
+            <h1>Welcome ${name}</h1>
+            <hr>
             <div>
                 <a href="list-todos">Manage</a> your todos.
             </div>
