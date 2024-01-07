@@ -9,11 +9,12 @@ import java.util.List;
 @Service
 public class TodoService {
     private static List<Todo> todos = new ArrayList<>();
+    private static int todosCount = 0;
 
     static {
         todos.add(
                 new Todo(
-                        1,
+                        ++todosCount,
                         "curtis",
                         "Learn AWS",
                         LocalDate.now().plusYears(1),
@@ -23,7 +24,7 @@ public class TodoService {
 
         todos.add(
                 new Todo(
-                        2,
+                        ++todosCount,
                         "curtis",
                         "Learn DevOps",
                         LocalDate.now().plusYears(2),
@@ -33,7 +34,7 @@ public class TodoService {
 
         todos.add(
                 new Todo(
-                        3,
+                        ++todosCount,
                         "curtis",
                         "Learn Full Stack Development",
                         LocalDate.now().plusYears(3),
@@ -44,5 +45,17 @@ public class TodoService {
 
     public List<Todo> findByUsername(String username) {
         return todos;
+    }
+
+    public void addTodo(String username, String description, LocalDate targetDate, boolean done) {
+        Todo todo = new Todo(
+                ++todosCount,
+                username,
+                description,
+                targetDate,
+                done
+        );
+
+        todos.add(todo);
     }
 }
