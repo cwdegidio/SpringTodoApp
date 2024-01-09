@@ -17,7 +17,7 @@ public class TodoService {
                 new Todo(
                         ++todosCount,
                         "curtis",
-                        "Learn AWS",
+                        "Get AWS Certified",
                         LocalDate.now().plusYears(1),
                         false
                 )
@@ -63,5 +63,16 @@ public class TodoService {
     public void deleteById(int id) {
         Predicate<? super Todo> predicate = todo -> todo.getId() == id;
         todos.removeIf(predicate);
+    }
+
+    public Todo findById(int id) {
+        Predicate<? super Todo> predicate = todo -> todo.getId() == id;
+        Todo todo = todos.stream().filter(predicate).findFirst().get();
+        return todo;
+    }
+
+    public void updateTodo(Todo todo) {
+        deleteById(todo.getId());
+        todos.add(todo);
     }
 }
